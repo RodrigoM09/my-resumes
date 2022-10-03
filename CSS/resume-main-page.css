@@ -24,10 +24,10 @@ hr {
 
 }
 .cards {
-    margin-left: -4rem;
+    margin-left: 1rem;
     border-radius: 2px;
     background: white;
-    width: 350px;
+    width: 450px;
     height: 450px;
     /* the following declarations make the card a flex container and justify and align its flex items */
     display: flex;
@@ -59,7 +59,7 @@ hr {
 /*    display: none;*/
 /*}*/
 img {
-    border-radius: 120px;
+    border-radius: 10px;
     width: 120px;
 }
 i {
