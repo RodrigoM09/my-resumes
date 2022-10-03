@@ -44,12 +44,20 @@ hr {
 .cards:hover {
     transform: translateX(-2rem);
 }
-.cards:hover ~.cards {
-    filter: blur(4px);
-    }
+/*.cards:hover ~.cards {*/
+/*    filter: blur(4px);*/
+/*    }*/
 
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
 
-
+/*.cards{*/
+/*    display: none;*/
+/*}*/
 img {
     border-radius: 120px;
     width: 120px;
