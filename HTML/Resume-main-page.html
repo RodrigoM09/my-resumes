@@ -4,58 +4,69 @@
     <meta charset="UTF-8">
     <title>Resume Main Page</title>
     <script src="../JS/keys.js"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../CSS/resume-main-page.css">
 </head>
 <body class="m-0 vh-100 row">
-<!-----------------------GO BACK BUTTON------------>
-            <div class="col-2 d-flex justify-content-center vh-100 w-25px p-0">
-                <button type="button" class="btn btn-link w-100 bg-transparent glyphicon glyphicon-step-back">
-                    back
-                </button>
-            </div>
 <!-------------------------------------MAIN DIV HOLDING CARDS---------------------------------------------->
-            <div id="main" class="main col-8 slideshow-container">
-                <div class="slider d-flex"> <!-----BEGINNING OF SLIDER DIV---------->
+            <div id="main" class="main">
                 <!-------------------------------------START OF FIRST CARD---------------------------------------------->
-                            <article id="24hrCard" class="cards">
-                                <section>
-                                    <img src="../IMGs/24hr.png" alt="profile-image" >
-                                </section>
-                                <section class="text-section">
-                                    <h2>Personal Trainer</h2>
-                                    <h3>2017 - 2018</h3>
-                                    <hr>
-                                </section>
-                                <section class="icons">
-                                    <a href="tel:(702) 360-2408"><i class="fas fa-phone-volume"></i></a>                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://linkedin.com/in/rodrigo-marquez-12b797159"><i class="fab fa-linkedin"></i></a>
-                                </section>
-                                <a href="Printable-Resume.html" rel="import"><h3>More Information</h3></a>
-                            </article>
-                <!-------------------------------------END OF FIRST CARD---------------------------------------------->
+                    <article id="mainCard" class="cards">
+                        <section>
+                            <img src="../IMGs/cdup-822-0196.jpg" alt="profile-image" >
+                        </section>
+                        <section class="text-section">
+                            <h2>Rodrigo Marquez</h2>
+                            <h3>Web Developer</h3>
+                            <hr>
+                        </section>
+                        <section class="icons">
+                            <a href=https://github.com/RodrigoM09 target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com/in/rodrigo-marquez-12b797159"><i class="fab fa-linkedin"></i></a>
+                        </section>
+                        <a href="Printable-Resume.html" rel="import"><h3>Printable resume</h3></a>
+                    </article>
+                    <!-------------------------------------END OF FIRST CARD---------------------------------------------->
+
+
                 <!-------------------------------------START OF SECOND CARD---------------------------------------------->
-                <article id="mainCard" class="cards">
-                    <section>
-                        <img src="../IMGs/cdup-822-0196.jpg" alt="profile-image" >
-                    </section>
-                    <section class="text-section">
-                        <h2>Rodrigo Marquez</h2>
-                        <h3>Web Developer</h3>
-                        <hr>
-                    </section>
-                    <section class="icons">
-                        <a href=https://github.com/RodrigoM09 target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com/in/rodrigo-marquez-12b797159"><i class="fab fa-linkedin"></i></a>
-                    </section>
-                    <a href="Printable-Resume.html" rel="import"><h3>Printable resume</h3></a>
-                </article>
+                    <article id="24hrCard" class="cards">
+                        <section>
+                            <img src="../IMGs/24hr.png" alt="profile-image" >
+                        </section>
+                        <section class="text-section">
+                            <h2>Personal Trainer</h2>
+                            <h3>2017 - 2018</h3>
+                            <hr>
+                        </section>
+                        <section class="icons">
+                            <a href="tel:(702) 360-2408"><i class="fas fa-phone-volume"></i></a>                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com/in/rodrigo-marquez-12b797159"><i class="fab fa-linkedin"></i></a>
+                        </section>
+                        <button class="myBtn"><h3>More Information</h3></button>
+                    </article>
+                    <!-----------THIS IS THE BEGINING OF THE FIRST MODAL ------------------------------------------------>
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>
+                            <ul>
+                                <li>Develop safe, professional, and comprehensive client programs that drive client goal achievement and retention.</li>
+                                <li>Conducts fitness consultations for new clients including pre-participation screening, Medical History, Lifestyle questionnaire, and goal setting to assess and recommend personal training programs</li>
+                                <li>Ensures all members feel competent, confident, and connected by providing superior customer service through complimentary and based services/programming</li>
+                                <li>Remains current on certifications and new trends in the industry.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!---------------------------------------ENDING OF MODAL------------------------------------------------------------->
                 <!-------------------------------------END OF SECOND CARD---------------------------------------------->
+
+
                 <!-------------------------------------START OF THIRD CARD---------------------------------------------->
                 <article id="thirdCard" class="cards">
                     <section>
@@ -71,9 +82,27 @@
                         <a href="https://www.instagram.com/explore/locations/364447137/life-time-green-valley/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.lifetime.life/" target="_blank"><i class="fas fa-desktop"></i></a>
                     </section>
-                    <a href="Printable-Resume.html" rel="import"><h3>More Information</h3></a>
+                    <button class="mySecondBtn"><h3>More Information</h3></button>
                 </article>
                 <!-------------------------------------END OF THIRD CARD---------------------------------------------->
+                    <!-----------THIS IS THE BEGINING OF THE SECOND MODAL ------------------------------------------------>
+                    <div id="mySecondModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>
+                            <ul>
+                                <li>Develop safe, professional, and comprehensive client programs that drive client goal achievement and retention.</li>
+                                <li>Conducts fitness consultations for new clients including pre-participation screening, Medical History, Lifestyle questionnaire, and goal setting to assess and recommend personal training programs</li>
+                                <li>Ensures all members feel competent, confident, and connected by providing superior customer service through complimentary and based services/programming</li>
+                                <li>Remains current on certifications and new trends in the industry.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!---------------------------------------ENDING OF MODAL------------------------------------------------------------->
+
+
                     <!-------------------------------------START OF FOURTH CARD---------------------------------------------->
                     <article id="fourthCard" class="cards">
                         <section>
@@ -88,19 +117,30 @@
                             <a href="https://www.army.mil/" target="_blank"><i class="fas fa-desktop"></i></a>
                             <a href="https://www.instagram.com/usarmy/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                         </section>
-                        <a href="Printable-Resume.html" rel="import"><h3>More Information</h3></a>
+                        <button class="myThirdBtn"><h3>More Information</h3></button>
                     </article>
                     <!-------------------------------------END OF FOURTH CARD---------------------------------------------->
-                </div> <!-------SLIDER DIV----------------------------->
+                    <!-----------THIS IS THE BEGINING OF THE MAIN DIV HOLDING THE MODAL ------------------------------------------------>
+                    <div id="myThirdModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>
+                            <ul>
+                                <li>Develop safe, professional, and comprehensive client programs that drive client goal achievement and retention.</li>
+                                <li>Conducts fitness consultations for new clients including pre-participation screening, Medical History, Lifestyle questionnaire, and goal setting to assess and recommend personal training programs</li>
+                                <li>Ensures all members feel competent, confident, and connected by providing superior customer service through complimentary and based services/programming</li>
+                                <li>Remains current on certifications and new trends in the industry.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <!---------------------------------------ENDING OF MODAL------------------------------------------------------------->
             </div>
 <!-------------------------------------END OF MAIN DIV HOLDING CARDS---------------------------------------------->
-<!-----------------------GO FORWARD BUTTON------------>
-            <div class="col-2 d-flex justify-content-center vh-100 p-0">
-                <button type="button" class="btn btn-link w-100 bg-transparent">
-                <span class="glyphicon glyphicon-step-forward"></span>Forward
-                </button>
-            </div>
+
             <script src="../JS/jquery-3.6.1.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <script src="../JS/resume-main-page.js"></script>
 </body>
 </html>
