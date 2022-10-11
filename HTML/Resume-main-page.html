@@ -32,43 +32,8 @@
                     <!-------------------------------------END OF FIRST CARD---------------------------------------------->
 
 
-                <!-------------------------------------START OF SECOND CARD---------------------------------------------->
-                    <article id="24hrCard" class="cards">
-                        <section>
-                            <img src="../IMGs/24hr.png" alt="profile-image" >
-                        </section>
-                        <section class="text-section">
-                            <h2>Personal Trainer</h2>
-                            <h3>2017 - 2018</h3>
-                            <hr>
-                        </section>
-                        <section class="icons">
-                            <a href="tel:(702) 360-2408"><i class="fas fa-phone-volume"></i></a>                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="https://linkedin.com/in/rodrigo-marquez-12b797159"><i class="fab fa-linkedin"></i></a>
-                        </section>
-                        <button class="myBtn"><h3>More Information</h3></button>
-                    </article>
-                    <!-----------THIS IS THE BEGINING OF THE FIRST MODAL ------------------------------------------------>
-                    <div id="myModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>
-                            <ul>
-                                <li>Develop safe, professional, and comprehensive client programs that drive client goal achievement and retention.</li>
-                                <li>Conducts fitness consultations for new clients including pre-participation screening, Medical History, Lifestyle questionnaire, and goal setting to assess and recommend personal training programs</li>
-                                <li>Ensures all members feel competent, confident, and connected by providing superior customer service through complimentary and based services/programming</li>
-                                <li>Remains current on certifications and new trends in the industry.</li>
-                            </ul>
-                            </p>
-                        </div>
-                    </div>
-                    <!---------------------------------------ENDING OF MODAL------------------------------------------------------------->
-                <!-------------------------------------END OF SECOND CARD---------------------------------------------->
-
-
-                <!-------------------------------------START OF THIRD CARD---------------------------------------------->
-                <article id="thirdCard" class="cards">
+                <!-------------------------------------START OF LIFETIME CARD---------------------------------------------->
+                <article id="lifetimeCard" class="cards">
                     <section>
                         <img src="../IMGs/lifetime.png" alt="profile-image" >
                     </section>
@@ -82,60 +47,94 @@
                         <a href="https://www.instagram.com/explore/locations/364447137/life-time-green-valley/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.lifetime.life/" target="_blank"><i class="fas fa-desktop"></i></a>
                     </section>
-                    <button class="mySecondBtn"><h3>More Information</h3></button>
+                    <button id="mySecondModal" class="myBtn" onclick="openModal('ltModal')"><h3>More Information</h3></button>
                 </article>
-                <!-------------------------------------END OF THIRD CARD---------------------------------------------->
-                    <!-----------THIS IS THE BEGINING OF THE SECOND MODAL ------------------------------------------------>
-                    <div id="mySecondModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>
-                            <ul>
-                                <li>Develop safe, professional, and comprehensive client programs that drive client goal achievement and retention.</li>
-                                <li>Conducts fitness consultations for new clients including pre-participation screening, Medical History, Lifestyle questionnaire, and goal setting to assess and recommend personal training programs</li>
-                                <li>Ensures all members feel competent, confident, and connected by providing superior customer service through complimentary and based services/programming</li>
-                                <li>Remains current on certifications and new trends in the industry.</li>
-                            </ul>
-                            </p>
-                        </div>
+                <!-------------------------------------END OF LIFETIME CARD---------------------------------------------->
+                <!-----------THIS IS THE BEGINING OF THE LIFETIME MODAL ------------------------------------------------>
+                <div id="ltModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('ltModal')">&times;</span>
+                        <p>
+                        <ul>
+                            <li>Develop safe, professional, and comprehensive client programs that drive client goal achievement and retention.</li>
+                            <li>Conducts fitness consultations for new clients including pre-participation screening, Medical History, Lifestyle questionnaire, and goal setting to assess and recommend personal training programs</li>
+                            <li>Ensures all members feel competent, confident, and connected by providing superior customer service through complimentary and based services/programming</li>
+                            <li>Remains current on certifications and new trends in the industry.</li>
+                        </ul>
+                        </p>
                     </div>
-                    <!---------------------------------------ENDING OF MODAL------------------------------------------------------------->
+                </div>
+                <!---------------------------------------ENDING OF LIFETIME MODAL------------------------------------------------------------->
 
-
-                    <!-------------------------------------START OF FOURTH CARD---------------------------------------------->
-                    <article id="fourthCard" class="cards">
-                        <section>
-                            <img src="../IMGs/usarmy.png" alt="profile-image" >
-                        </section>
-                        <section class="text-section">
-                            <h2>U.S Army</h2>
-                            <h3>2009 - 2018</h3>
-                            <hr>
-                        </section>
-                        <section class="icons">
-                            <a href="https://www.army.mil/" target="_blank"><i class="fas fa-desktop"></i></a>
-                            <a href="https://www.instagram.com/usarmy/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-                        </section>
-                        <button class="myThirdBtn"><h3>More Information</h3></button>
-                    </article>
-                    <!-------------------------------------END OF FOURTH CARD---------------------------------------------->
-                    <!-----------THIS IS THE BEGINING OF THE MAIN DIV HOLDING THE MODAL ------------------------------------------------>
-                    <div id="myThirdModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>
-                            <ul>
-                                <li>Develop safe, professional, and comprehensive client programs that drive client goal achievement and retention.</li>
-                                <li>Conducts fitness consultations for new clients including pre-participation screening, Medical History, Lifestyle questionnaire, and goal setting to assess and recommend personal training programs</li>
-                                <li>Ensures all members feel competent, confident, and connected by providing superior customer service through complimentary and based services/programming</li>
-                                <li>Remains current on certifications and new trends in the industry.</li>
-                            </ul>
-                            </p>
-                        </div>
+                <!-------------------------------------START OF ARMY CARD---------------------------------------------->
+                <article id="armyCard" class="cards">
+                    <section>
+                        <img src="../IMGs/usarmy.png" alt="profile-image" >
+                    </section>
+                    <section class="text-section">
+                        <h2>U.S Army</h2>
+                        <h3>2009 - 2018</h3>
+                        <hr>
+                    </section>
+                    <section class="icons">
+                        <a href="https://www.army.mil/" target="_blank"><i class="fas fa-desktop"></i></a>
+                        <a href="https://www.instagram.com/usarmy/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </section>
+                    <button id="myThirdModal" class="myBtn" onclick="openModal('usModal')"><h3>More Information</h3></button>
+                </article>
+                <!-------------------------------------END OF ARMY CARD---------------------------------------------->
+                <!-----------THIS IS THE BEGINNING OF THE ARMY MODAL ------------------------------------------------>
+                <div id="usModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('usModal')">&times;</span>
+                        <p>
+                        <ul>
+                            <li>Accountable for the welfare, fitness, morale, and discipline of 12 to 30 Soldiers</li>
+                            <li>Developed and training programs in preparation for combat deployment</li>
+                            <li>Maintained accountability, issued and insured proper function of over 5,000,000 worth of equipment.</li>
+                            <li>Created and fostered an atmosphere of tolerance and free of harassment, developing a unified and team driven spirt.</li>
+                        </ul>
+                        </p>
                     </div>
-                    <!---------------------------------------ENDING OF MODAL------------------------------------------------------------->
+                </div>
+                <!---------------------------------------ENDING OF ARMY MODAL------------------------------------------------------------->
+
+                <!-------------------------------------START OF 24HOUR CARD---------------------------------------------->
+                <article id="24hrCard" class="cards">
+                    <section>
+                        <img src="../IMGs/24hr.png" alt="profile-image" >
+                    </section>
+                    <section class="text-section">
+                        <h2>Personal Trainer</h2>
+                        <h3>2017 - 2018</h3>
+                        <hr>
+                    </section>
+                    <section class="icons">
+                        <a href="tel:(702) 360-2408"><i class="fas fa-phone-volume"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/rodrigo-marquez-12b797159"><i class="fab fa-linkedin"></i></a>
+                    </section>
+                    <button id="myModal" class="myBtn" onclick="openModal('24Modal')"><h3>More Information</h3></button>
+                </article>
+                <!-----------THIS IS THE BEGINING OF THE 24HOUR MODAL ------------------------------------------------>
+                <div id="24Modal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('24Modal')">&times;</span>
+                        <p>
+                        <ul>
+                            <li>Develop safe, professional, and comprehensive client programs that drive client goal achievement and retention.</li>
+                            <li>Conducts fitness consultations for new clients including pre-participation screening, Medical History, Lifestyle questionnaire, and goal setting to assess and recommend personal training programs</li>
+                            <li>Ensures all members feel competent, confident, and connected by providing superior customer service through complimentary and based services/programming</li>
+                            <li>Remains current on certifications and new trends in the industry.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+                <!---------------------------------------ENDING OF 24HOUR MODAL------------------------------------------------------------->
+
             </div>
 <!-------------------------------------END OF MAIN DIV HOLDING CARDS---------------------------------------------->
 
