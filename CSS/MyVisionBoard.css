@@ -1,3 +1,31 @@
-#header{
-text-align: center;
+#Header{
+    text-align: center;
+    font-size: x-large;
+    background-color: gold;
+    padding: 15px;
+    position: relative;
+    top: -20px
+}
+.fade-in-text {
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#circle {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+}
+/*img{*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*}*/
+.GT3{
+    display: inline-block;
+    background-image: url(../IMGs/gt3-rs.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
 }
