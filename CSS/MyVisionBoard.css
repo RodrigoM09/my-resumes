@@ -14,7 +14,7 @@
     100% { opacity: 1; }
 }
 
-#circle {
+.circle {
     border-radius: 50%;
     width: 350px;
     height: 350px;
@@ -23,9 +23,42 @@
 /*    width: 250px;*/
 /*    height: 250px;*/
 /*}*/
-.GT3{
-    display: inline-block;
+#circles{
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.caption{
+    display: flex;
+}
+#GT3{
+    display: flex;
     background-image: url(../IMGs/gt3-rs.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#microSoft{
+    display: inline-block;
+    background-image: url(../IMGs/microsoft.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#myBankAccount{
+    display: inline-block;
+    background-image: url(../IMGs/myBankAccount.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#house{
+    display: inline-block;
+    background-image: url(../IMGs/myHouse.webp);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#houseInBrasil{
+    display: inline-block;
+    background-image: url(../IMGs/myhouseinBrasil.jpeg);
     background-position: 50% 50%;
     background-size: cover;
 }
