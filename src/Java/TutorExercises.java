@@ -58,6 +58,18 @@ public class TutorExercises {
         System.out.println("The max element is : " + max + " and it's index is : " + indexOfMaxElement);
 
 
+        // Shallow copying arrays
+
+        int[] numbers = {1,2,3,4,5,6,7,8,9};
+
+        int[] positiveNumbers = numbers;
+
+        numbers[0] = 55;
+
+        for (int num : positiveNumbers)
+        {
+            System.out.println(num + " ");
+        }
 
 
 
