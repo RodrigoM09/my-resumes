@@ -1,5 +1,6 @@
 package Java;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TutorExercises {
@@ -143,11 +144,70 @@ public class TutorExercises {
             }
 
         }
-            System.out.println("The average is : " + average);
-            System.out.println("The number of students above or equal to the average is " + count);
-            System.out.println("The number of students below the average is " + belowAverage);
+        System.out.println("The average is : " + average);
+        System.out.println("The number of students above or equal to the average is " + count);
+        System.out.println("The number of students below the average is " + belowAverage);
 
+// MULTI-DIMENSIONAL ARRAYS----------------------------------------->
+        // INITIALIZING AND THEN GIVING NUMBER OF VALUES------------->
+        /*  int[][] numbers; //null
+        numbers = new int[5][3]; */
 
+        //INITIALIZING AND GIVING NUMBER OF VALUES IN ONE LINE ---------------->
+        /* int[][] integers = new int[2][2];
+            // GIVING THE ROWS THEIR VALUES-------------->
+            integers[0][0] = 3;
+            integers[0][1] = 5;
+            // GIVING THE COLUMNS THEIR VALUES-------------->
+            integers[1][0] = 7;
+            integers[1][1] = 9; */
+
+        int[][] integers = {{3, 5, 7},
+                {10, 2, 12}
+        };
+
+        System.out.println(Arrays.deepToString(integers));
+
+        // LOOPING THROUGH THE COLUMNS AND THEN ROWS------------------->
+        for (int i = 0; i < 3; i++) // OUTER LOOP-COLUMNS------------------>
+        {
+            for (int j = 0; j < 2; j++) {  //INNER LOOP-ROWS----------------------->
+                System.out.println(integers[j][i] + " ");
+            }
         }
-        public static void discount()
+
+
+//PRINTING FIRST COLUMN------------>
+        System.out.println(integers[0][0] + " ");
+        System.out.println(integers[1][0] + " ");
+
+//PRINTING SECOND COLUMN------------>
+        System.out.println(integers[0][1] + " ");
+        System.out.println(integers[1][1] + " ");
+
+//PRINTING THIRD COLUMN----------------->
+        System.out.println(integers[0][2] + " ");
+        System.out.println(integers[1][2] + " ");
+
+        // LOOPING THROUGH THE ROWS AND THEN COLUMNS------------------->
+        for (int i = 0; i < 2; i++) //OUTER LOOP-ROWS------------->
+        {
+            for (int j = 0; j < 3; j++) { //INNER LOOP-COLUMNS
+                System.out.println(integers[i][j] + " ");
+            }
+        }
+
+        //PRINT FIRST ROW
+        System.out.println(integers[0][0] + " ");
+        System.out.println(integers[0][1] + " ");
+        System.out.println(integers[0][2] + " ");
+
+        System.out.println("__________________________");
+
+        //PRINT SECOND ROW
+        System.out.println(integers[1][0] + " ");
+        System.out.println(integers[1][1] + " ");
+        System.out.println(integers[1][2] + " ");
+
     }
+}
