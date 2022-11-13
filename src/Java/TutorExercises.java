@@ -209,5 +209,29 @@ public class TutorExercises {
         System.out.println(integers[1][1] + " ");
         System.out.println(integers[1][2] + " ");
 
+
+
+// LOOPING THROUGH MULTI-DIMENSIONAL ARRAY ------------------------->
+        int[][] integers2 = getArray();
+
+        printArray(integers2);
+
+    }
+
+
+    public static int[][] getArray()
+    {                       //ANONYMOUS ARRAY--------------->
+        return new int[][]{{10,20,30},{40,50,60},{70,80,90}};
+    }
+
+    public static void printArray(int[][] integers)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                System.out.println(integers[i][j]);
+            }
+        }
     }
 }
