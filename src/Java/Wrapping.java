@@ -1,5 +1,7 @@
 package Java;
 
+import java.util.ArrayList;
+
 public class Wrapping
 {
     public static void main(String[] args)
@@ -55,5 +57,17 @@ public class Wrapping
 
         System.out.println("The value of boolean variable : " + variable3);
 
+        //Unboxing an ArrayList-------------------------------------------------->
+        ArrayList<Integer> list = new ArrayList<>();
+
+        list.add(15);
+        list.add(5);
+
+        System.out.println("Array list : " + list);
+
+
+        int a = list.get(0);//unboxing
+
+        System.out.println("The value at index 0 is : " + a);
     }
 }
