@@ -1,5 +1,6 @@
 package Java;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 
 public class Wrapping
@@ -69,5 +70,27 @@ public class Wrapping
         int a = list.get(0);//unboxing
 
         System.out.println("The value at index 0 is : " + a);
+
+
+
+        //USING BIGINTEGER FOR VERY LARGE NUMBERS-------------------------------------->
+        BigInteger myObj1 = new BigInteger("2562154620548654684641894765164646148784154625523015421478521548741");
+
+        BigInteger myObj2 = new BigInteger("14516987548745527154271585250285252563215486258845148524521");
+        //BigInteger myObj3 = null;
+
+        BigInteger myObj3 = myObj1.add(myObj2);
+        System.out.println(myObj3);
+
+        BigInteger myObj4 = myObj1.multiply(myObj2);
+        System.out.print(myObj4);
+        myObj3 = myObj1.divide(myObj2);
+        myObj3 = myObj1.subtract(myObj2);
+
+        myObj3 = myObj1.gcd(myObj2);
+
+        BigInteger myObj5 = myObj1.pow(10);
+
+        System.out.println(myObj5);
     }
 }
