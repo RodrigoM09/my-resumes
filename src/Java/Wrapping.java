@@ -1,6 +1,8 @@
 package Java;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 
 public class Wrapping
@@ -92,5 +94,18 @@ public class Wrapping
         BigInteger myObj5 = myObj1.pow(10);
 
         System.out.println(myObj5);
+
+        //USING BIGDECIMAL AND ROUNDING MODE FOR DECIMALS-------------------------------------->
+        BigDecimal myObject1 = new BigDecimal(2562154154652316521541245685125612548126205486541.99);
+
+        BigDecimal myObject2 = new BigDecimal(142154852585962314852148551694521.78);
+
+        //BigInteger myObj3 = null;
+        BigDecimal decimal1 = myObject1.add(myObject2);
+        System.out.println(decimal1);
+
+        BigDecimal decimalM = myObject1.divide(myObject2, 5, RoundingMode.DOWN);
+
+        System.out.println(decimalM);
     }
 }
